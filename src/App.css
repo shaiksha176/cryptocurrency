@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --text-color: #334a51;
+  --primary-color: #003958;
+  --alternate-color: #007d50;
+  --hover-color: #26b282;
+}
+
+#coins {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#coins td,
+#coins th {
+  border: 1px solid #ddd;
+  padding: 12px;
+}
+
+/* #coins tbody tr:hover {
+  color: white;
+
+  background-color: var(--hover-color);
+} */
+
+#coins th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  color: var(--text-color);
+  border-top: 6px solid var(--alternate-color);
+  opacity: 0.92;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 17px;
+  border-radius: 5px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  color: var(--alternate-color);
+  font-size: 40px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin: 40px 0;
+}
+
+.name,
+.price {
+  font-weight: 400;
+  color: var(--text-color);
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
+.symbol {
+  color: var(--text-color);
+  letter-spacing: 1px;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    width: 99.6%;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 22px;
+    width: 80%;
+    text-align: center;
+    margin: 20px auto;
+    border: 2px solid #11b478;
+  }
+
+  th {
+    font-size: 16px;
+  }
+
+  #coins tbody tr:hover {
+    background-color: none;
+    /* opacity: 0.9; */
+  }
+
+  #coins td,
+  #coins th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+  .name,
+  .price,
+  .symbol {
+    font-size: 14px;
+  }
+}
